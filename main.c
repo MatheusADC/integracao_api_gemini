@@ -6,7 +6,7 @@
 #include "cJSONFiles/cJSON/cJSON.h"
 
 #define API_URL "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
-#define API_KEY "AIzaSyAWg10zcEwWkk9yD0zPI9mL7h6cwlbmv2U"
+#define API_KEY "YOUR_KEY"
 #define CSV_FILE "chat.csv"
 #define BUFFER_SIZE 4096
 
@@ -42,7 +42,7 @@ size_t escreverRetorno(void *contents, size_t size, size_t nmemb, void *userp) {
 
     char *ptr = realloc(mem->memory, mem->size + realsize + 1);
     if (ptr == NULL) {
-        printf("MemÛria insuficiente! A funÁ„o realloc() retornou NULL.\n");
+        printf("Mem√≥ria insuficiente! A fun√ß√£o realloc() retornou NULL.\n");
         return 0;
     }
 
@@ -86,7 +86,7 @@ int enviarPerguntaAPI(const char *pergunta, char *resposta) {
         res = curl_easy_perform(curl);
         if (res != CURLE_OK) {
             fprintf(stderr, "curl_easy_perform() falhou: %s\n", curl_easy_strerror(res));
-            strcpy(resposta, "ERRO NA COMUNICA«√O");
+            strcpy(resposta, "ERRO NA COMUNICA√á√ÉO");
             curl_easy_cleanup(curl);
             free(chunk.memory);
             return 1;
@@ -102,7 +102,7 @@ int enviarPerguntaAPI(const char *pergunta, char *resposta) {
         curl_easy_cleanup(curl);
     } else {
         fprintf(stderr, "Falha ao iniciar a biblioteca CURL!\n");
-        strcpy(resposta, "ERRO NA COMUNICA«√O");
+        strcpy(resposta, "ERRO NA COMUNICA√á√ÉO");
         return 1;
     }
 
@@ -153,7 +153,7 @@ int main() {
                 cJSON_Delete(json);
             }
         } else {
-            printf("Erro na comunicaÁ„o com a API.\n");
+            printf("Erro na comunica√ß√£o com a API.\n");
         }
     }
 
