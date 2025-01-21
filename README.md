@@ -1,4 +1,4 @@
-# Description
+# <img src="https://github.com/user-attachments/assets/caabfdf0-0f9e-44a3-8200-c6579fe87887" alt="description icon" width="28"> Description
 The project aims to implement an integration with the Gemini Large Language Model (LLM). The implementation is based on creating a question-and-answer (QA) program with the following specifications:
 - The user will be able to send questions to the LLM, which will then provide answers to the questions;
 - Questions and answers must be saved in a text file in CSV format, which should also record the timestamp of when they occurred;
@@ -16,7 +16,7 @@ USER; 05/06/2024 10h00; Qual a capital do Brasil?;
 LLM; 05/06/2024 10h01; ERRO NA COMUNICAÇÃO;
 ```
 
-## Example
+# <img src="https://github.com/user-attachments/assets/2bd91f82-43a7-44c6-8fb3-eaa3ca20089e" alt="terminal icon" width="28"> Example
 ### Windows Terminal - Interaction
 ![image](https://github.com/user-attachments/assets/ff80d6d9-807b-4c7e-904d-97a32481ca3d)
 <br>
