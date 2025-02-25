@@ -16,7 +16,7 @@ USER; 05/06/2024 10h00; Qual a capital do Brasil?;
 LLM; 05/06/2024 10h01; ERRO NA COMUNICAÇÃO;
 ```
 
-# <img src="https://github.com/user-attachments/assets/2bd91f82-43a7-44c6-8fb3-eaa3ca20089e" alt="terminal icon" width="28"> Example
+# <sub><img src="https://github.com/user-attachments/assets/2bd91f82-43a7-44c6-8fb3-eaa3ca20089e" alt="terminal icon" width="34"></sub> Example
 ### Windows Terminal - Interaction
 ![image](https://github.com/user-attachments/assets/ff80d6d9-807b-4c7e-904d-97a32481ca3d)
 <br>
